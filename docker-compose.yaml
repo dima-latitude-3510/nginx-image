@@ -1,0 +1,8 @@
+php:
+  restart: always
+  image: "nginx-image"
+  container_name: php_test-container
+  ports:
+    - 8091:80
+  volumes:
+    - /home/dima/nginx-image/webroot:/var/www/html
